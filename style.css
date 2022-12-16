@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border:1px solid red */
+    z-index: 2;
+}
+body{
+    background-color: #e03165;
+    color:white;
+    height: fit-content;
+    width: 100%;
+}
+#head{
+    height: 150px;
+    width:100%;
+    background-color:#e03165;
+    color:white;
+    overflow: hidden;
+}
+#head input{
+    margin: 10px 20px 10px 20px;
+    height: 100px;
+    width:200px;
+    text-align: center;
+    font-size:80px;
+    box-shadow: 5px 5px 20px 5px black ;
+    background-color: black;
+    border:3px solid white;
+    color:white;
+    position: fixed;
+    bottom:2px;
+    cursor:grab;
+    left:2px;
+}
+#head h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin: 30px 0px;
+    text-align: center;
+    z-index:1
+}
+#head p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    z-index:1;
+    font-style: oblique;
+}
+#retry{
+    position: fixed;
+    top:10px;
+    right:10px;
+    z-index:3;
+    padding: 5px 15px;
+    font-size: 20px;
+    width: fit-content;
+    cursor:pointer;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    font-style: italic;
+    font-weight: 300;
+}
+#nextRound{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    z-index:3;
+    padding: 5px 15px;
+    font-size: 20px;
+    width: fit-content;
+    cursor:pointer;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+
+/* section-2 */
+#scorebar{
+    height: 120px;
+    width:100%;
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    background-image: linear-gradient(white , gray);
+}
+#scorebar input{
+    margin: 10px 20px 10px 20px;
+    height: 100px;
+    width:100px;
+    text-align: center;
+    font-size:80px;
+    box-shadow: 5px 5px 20px 5px black ;
+    background-color: black;
+    cursor:grab;
+    border:3px solid white;
+    color:white;
+}
+#scorebar p{
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+    width:fit-content;
+    text-align:center;
+    padding:10px 20px;
+    font-weight: 900;
+    font-size: 30px;
+    color:black;
+    display: inline-block;
+}
+
+
+/* section-3 */
+#selectionBar{
+    height:305px;
+    width:100%;
+}
+#selectionBar h1{
+    height:60px;
+    font-style: italic;
+    padding: 12.5px auto;
+    font-size: 40px;
+    text-align: center;
+}
+.images{
+    margin: 0px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.images img{
+    height: 200px;
+    width:200px;
+    border:5px solid black;
+    border-radius:20px;
+}
+.images img:hover{
+    transform:scale3d(1.2,1.2,30);
+    cursor:pointer;
+}
+
+
+/* section-4 */
+#choices{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imageChosen{
+    height: 200px;
+    width:200px;
+    margin:0px 100px;
+    text-align: center;
+    padding: 0px 0px;
+    font-size: 120px;
+    overflow: hidden;
+    border:5px solid black;
+    border-radius: 20px;
+}
+#choices p{
+    font-style: italic;
+    width:400px;
+    height: 40px;
+    font-size: 25px;
+    padding: 7.5px;
+    text-align: center;
+}
+
+
+/* section-5 */
+#roundWinner{
+    height: 80px;
+    width:100%;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    overflow: hidden;
+    color:black;
+    background-image: linear-gradient(white , gray);
+}
+
+
+/* section-6 */
+#results{
+    display: flex;
+    width: 70%;
+    margin: 0px 15%;
+    height: fit-content;
+}
+table{
+    border:3px solid black;
+    table-layout:auto;
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+td{
+    border:3px solid black;
+}
+th{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    height: 60px;
+    border:3px solid black;
+}
+tr{
+    padding: 5px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    height: 40px;
+    border:3px solid black;
+}
+
+/* section- 7 */
+#overallWinner{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    padding-top:50px;
+}
+
+/* hidden box */
+#hiddenBox{ 
+    visibility: hidden;
+    top:0px;
+    right: 0px;
+    z-index: 5;
+    background-color:black;
+    position: fixed;
+    height: 60vh;
+    width: 40vw;
+    margin: 20vh 30vw;
+    color:white;
+    box-shadow: 10px 10px 30px 8px white, -10px -10px 30px 8px white;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+#hiddenBox h1{
+    margin: 30px 0px;
+    display: block;
+    text-align: center;
+    font-size: 60px;
+}
+#hiddenBox h2{
+    margin: 30px 0px;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
