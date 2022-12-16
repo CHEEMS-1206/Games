@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stone Paper Scissors</title>
+    <meta name="viewport" content="width=device-width initial-scale=0.5">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="head">
+        <h1>Stone , Paper , Scissors</h1>
+        <button id="retry">Retry</button>
+        <button id="nextRound">Next Round</button>
+        <p>Best of <b>10 ROUNDS</b> is the Winner </p>
+        <input type="text" readonly id="scoreTally" value="0/0">
+    </div>
+
+    <!-- section-2 -->
+    <div id="scorebar">
+        <div>
+            <input type="text" readonly id="yourscore" value="0">
+            <p>You</p>
+        </div>
+        <div>
+            <p>Computer</p>
+            <input type="text" readonly id="compscore" value ="0">
+        </div>
+    </div>
+
+    <!-- section-3 -->
+    <div id="selectionBar">
+        <h1>Chose your call...</h1>
+        <br>
+        <div class="images">
+            <img src="images/Stone.jfif" alt="" id="rock">
+            <img src="images/paper-2.jfif" alt="" id="paper">
+            <img src="images/scissor.jfif" alt="" id="Scissors">
+        </div>
+    </div>
+
+    <!-- section-4  -->
+    <div id="choices">
+        <div id="yourFather">
+            <div id="yourChosenImage" class="imageChosen">!</div>
+            <p>Your choice here</p>
+        </div>
+        <div id="compFather">
+            <div id="compChosenImage" class="imageChosen">!</div>
+            <p>Computer choice here</p>
+        </div>
+    </div>
+
+    <!-- section-5 -->
+    <div id="roundWinner">Each Round winner declared here.</div>
+
+    <!-- section-6 -->
+    <div id="results">
+        <table>
+            <tr>
+                <th>You chose</th>
+                <th>Computer chose</th>
+                <th>Winner</th>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+            <tr>
+                <td class="yourChoice">-</td>
+                <td class="compChoice">-</td>
+                <td class="winnerOp">-</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- section-7  -->
+    <div id="overallWinner">All the best!!!</div>
+    <script src="script.js"></script>
+
+    <!-- hidden element shows upon result  -->
+    <div id="hiddenBox">
+        <h1>Stone , Papers, Scissors</h1>
+        <h2 id="finalScore">Score is ...</h2>
+        <h2 id="finalWinner">Winner is ...</h2>
+    </div>
+</body>
+</html>
