@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  /* border: 1px solid black; */
+}
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #7d5fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#modal {
+  background-color: #2d3436;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  height: 350px;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px black, -5px -5px 10px 5px black;
+  position: fixed;
+  z-index: 1;
+  visibility: hidden;
+}
+#modal h1 {
+  font-size: 35px;
+  font-style: italic;
+  margin: 30px 0px;
+  text-align: center;
+}
+#modal p {
+  font-size: 18px;
+  margin: 10px 0px;
+  text-align: left;
+  padding-left: 40px;
+}
+.modalBtn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.modalBtn button {
+  transform: scale3d(1.5, 1.5, 30);
+}
+.details label {
+  color: white;
+  font-size: 22px;
+}
+.gamebox {
+  position: relative;
+  height: 600px;
+  width: 1000px;
+  background-color: white;
+}
+.bucket {
+  height: 150px;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 4;
+  left: 75px;
+}
+#c {
+  height: 520px;
+  width: 100%;
+  /* background-color: #2d3436; */
+}
+.bucketTop{
+  background-color: white;
+  height: 40px;
+  left: -5%;
+  width: 110%;
+  position: absolute;
+  z-index: 3;
+}
+.bc {
+  height: 160px;
+  background-color: #ff3838;
+  width: 100px;
+  border-bottom: 5px solid black;
+  border-radius: 50% 50% 0px 0px;
+  z-index: 2;
+}
+.bl {
+  transform: rotate(-30deg) translateX(-2px);
+  transform-origin: 0px 150px;
+  background-color: #ff3838;
+  border-left: 5px solid black;
+  border-radius: 0px 50% 0px 0px;
+  z-index: 1;
+}
+.br {
+  transform: rotate(30deg) translateX(2px);
+  transform-origin: 100px 150px;
+  background-color: #ff3838;
+  border-radius: 50% 0px 0px 0px;
+  border-right: 5px solid black;
+  z-index: 1;
+}
+.bucketBg {
+  height: 170px;
+  width: 250px;
+  border-radius: 25% 25% 50% 50%;
+  position: relative;
+  bottom:200px;
+  left: 375px;
+  border: none;
+}
+
+.header {
+  background-color: #30336b;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.scorebar {
+  width: max-content;
+  padding: 0px 30px;
+}
+.heading {
+  display: inline-block;
+  width: 500px;
+  text-align: center;
+}
+.heading h1 {
+  color: black;
+  font-size: 35px;
+  font-style: italic;color:white
+}
+.btnContainer button,
+.details button,
+.modalBtn button,
+#logout {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  min-width: 80px;
+  border-radius: 2px;
+  height: 30px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+#logout {
+  margin: 20px 20px;
+  background-color: #e74c3c;
+}
+#play ,#clickButton{
+  background-color: #2ecc71;
+}
+#pause {
+  background-color: #3498db;
+}
+#retry,
+#retry1 {
+  background-color: #eb4d4b;
+}
+.scorebar label {
+  color: white;
+  font-size: 18px;
+}
+span {
+  color: white;
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.details {
+  position: absolute;
+  bottom: 80px;
+  left: 10px;
+  margin: 10px 20px;
+  display: inline-block;
+  color: #2d3436;
+  height: max-content;
+  width: max-content;
+}
+.details span{
+  color: #2d3436;
+}
+.litterContainer {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  align-items: center;
+  display: none;
+  justify-content: center;
+}
+.litter1 {
+  height: 50px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: #2ecc71;
+}
+.litter2 {
+  position: absolute;
+  height: 50px;
+  width: 30px;
+  transform: rotate(90deg);
+  background-color: #2ecc71;
+}
+.litter3 {
+  height: 50px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(135deg);
+  background-color: #2ecc71;
+}
+.litter4 {
+  height: 50px;
+  width: 30px;
+  transform: rotate(180deg);
+  background-color: #2ecc71;
+  position: absolute;
+}
+
+.pointingNone {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.3;
+}
